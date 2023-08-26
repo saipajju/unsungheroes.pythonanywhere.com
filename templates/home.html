@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Unsung Heroes</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1135114556927131701/1144570264605171803/7-2-india-flag-png-file.png" type="image/gif" sizes="16x16">
+    <style>
+        body {
+            background-color: #eeeabd; /* Dark background color */
+        }
+        .navbar {   
+            background-color: #65a5c7; /* Contrasting color for the navbar */
+        }
+        .hero-box {
+            background-color: #65a5c7;
+            border: 2px solid #fff;
+        }
+
+        /* Animated button styles */
+        .know-more-button {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #3182ce;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 14px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            z-index: 1;
+        }
+
+        .know-more-button:before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 75%);
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        .know-more-button:hover {
+            transform: scale(1.1);
+        }
+
+        .know-more-button:hover:before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="/" class="text-white text-xl font-semibold">Unsung Heroes</a>
+        <!-- You can add navigation links here if needed -->
+    </div>
+</nav>
+
+<!-- Hero Section: Matangini Hazra -->
+<section class="container mx-auto mt-8 p-4 text-center">
+    <div class="hero-box rounded-lg shadow-lg p-4 mx-auto" style="max-width: 450px;">
+        <img src="https://im.indiatimes.in/amp/2019/Sep/gandhi_1569749049.jpg?w=1200&h=900&cc=1" alt="Matangini Hazra" class="w-32 mx-auto rounded-full mb-2">
+        <h2 class="text-lg font-semibold mb-1 text-gray-300">Matangini Hazra</h2>
+        <p class="text-white text-sm">The Indian freedom struggle, led by figures like Mahatma Gandhi, was a profound chapter in India's history, fostering independence through sacrifice and leadership. Matangini Hazra and other Gandhians also played crucial roles in this struggle.</p>
+        <a href="/mtg" class="know-more-button">Know More</a>
+    </div>
+</section>
+
+<!-- Hero Section: Khudiram Bose -->
+<section class="container mx-auto mt-4 p-4 text-center">
+    <div class="hero-box rounded-lg shadow-lg p-4 mx-auto" style="max-width: 450px;">
+        <img src="https://www.sakshipost.com/sites/default/files/styles/canvas/public/article_images/2021/08/11/ki-1628658341.JPG?itok=R_eyFybd" alt="Khudiram Bose" class="w-32 mx-auto rounded-full mb-2">
+        <h2 class="text-lg font-semibold mb-1 text-gray-300">Khudiram Bose</h2>
+        <p class="text-white text-sm">
+            Subhas Chandra Bose was an extremely well-known freedom fighter back in the past but was he the only ‘Bose’ who struggled during the past? Though Subhas Chandra Bose was never related to Khudiram Bose, Khudiram Bose comes out to be an extremely influential person in the history of the Indian freedom struggle. </p>
+        <a href="/khb" class="know-more-button">Know More</a>
+    </div>
+</section>
+
+</body>
+</html>

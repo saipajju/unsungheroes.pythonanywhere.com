@@ -42,5 +42,17 @@ def khb2():
 def khb3():
     return render_template('khb3.html')
 
+@app.route('/khb4')
+def khb4():
+    return render_template('khb4.html')
+
+@app.route('/gallery')
+def gallery():
+    return render_template('gallery.html')
+
+@app.route('/credits')
+def credits():
+    return render_template('credits.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

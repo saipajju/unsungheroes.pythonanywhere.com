@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Gallery - Unsung Heroes</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1135114556927131701/1144570264605171803/7-2-india-flag-png-file.png" type="image/gif" sizes="16x16">
+    <style>
+        body {
+            background-color: #eeeabd; /* Dark background color */
+        }
+        .navbar {   
+            background-color: #65a5c7; /* Contrasting color for the navbar */
+        }
+        /* ... Other styles ... */
+
+        /* Image animation */
+        .gallery-image {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="/" class="text-white text-xl font-semibold">Unsung Heroes</a>
+        <div class="flex space-x-4">
+            <a href="/gallery" class="text-white">Gallery</a>
+            <a href="/credits" class="text-white">Credits</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Image Gallery -->
+<section class="container mx-auto mt-8 p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="gallery-image">
+            <img src="https://cdn.papertrell.com/006/959/006959860_480X320FW.jpg" alt="Gallery Image 1" class="rounded-lg shadow-lg">
+        </div>
+        <div class="gallery-image">
+            <img src="https://i0.wp.com/www.opindia.com/wp-content/uploads/2018/08/khudiram.jpg?fit=970%2C545&ssl=1" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+        </div>
+        <div class="gallery-image">
+            <img src="https://static.langimg.com/thumb/85233046/navbharat-times-85233046.jpg?imgsize=88740&width=1200&height=900&resizemode=75" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+        </div>
+        <div class="gallery-image">
+            <img src="https://images.bhaskarassets.com/web2images/521/2022/08/03/resize-04_1659467487.jpg" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+        </div>
+        <div class="gallery-image">
+            <img src="https://preview.redd.it/dui458jtueh91.jpg?width=480&format=pjpg&auto=webp&s=03c9fbeca6692fb03e4784c57011667f63b1fe22" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+        </div>
+        <div class="gallery-image">
+            <img src="https://feminisminindia.com/wp-content/uploads/2017/11/Matangini-Hazra.jpg" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+        </div>
+        <div class="gallery-image">
+            <img src="https://dontgiveupworld.com/wp-content/uploads/2016/08/matangini_hazra@Dontgiveupworld.jpg" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+        </div>
+        <div class="gallery-image">
+            <img src="https://images.moneycontrol.com/static-mcnews/2021/08/MATANGINI-HAZRA.jpg" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+        </div>
+        <div class="gallery-image">
+            <img src="https://d18x2uyjeekruj.cloudfront.net/wp-content/uploads/2023/08/matkan.jpg" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+        </div>
+        <div class="gallery-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Stamp_of_India_-_2002_-_Colnect_158283_-_Tamralipta_Jatiya_Sarkar_-_Matangini_Hazra.jpeg/220px-Stamp_of_India_-_2002_-_Colnect_158283_-_Tamralipta_Jatiya_Sarkar_-_Matangini_Hazra.jpeg" alt="Gallery Image 2" class="rounded-lg shadow-lg">
+        </div>
+        
+    </div>
+</section>
+
+</body>
+</html>
